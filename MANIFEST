@@ -7,4 +7,5 @@ README
 lib/AudioFile/Info/Build.pm
 lib/AudioFile/Info/MP3/Info.pm
 t/1.t
+t/3_pod.t
 t/test.mp3
