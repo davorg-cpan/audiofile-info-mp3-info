@@ -1,0 +1,21 @@
+--- #YAML:1.0
+name: AudioFile-Info-MP3-Info
+version: 1.02
+license: perl
+distribution_type: module
+requires:
+  AudioFile::Info: 0
+  MP3::Info: 0
+  perl: 5.6.0
+recommends: {}
+build_requires:
+  Module::Build: 0
+conflicts: {}
+dynamic_config: 1
+provides:
+  AudioFile::Info::Build:
+    file: lib/AudioFile/Info/Build.pm
+  AudioFile::Info::MP3::Info:
+    file: lib/AudioFile/Info/MP3/Info.pm
+    version: 1.02
+generated_by: Module::Build version 0.20
