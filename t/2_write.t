@@ -6,7 +6,7 @@ use File::Copy;
 use FindBin qw($Bin);
 
 SKIP: {
-  skip "AudioFile::Info::MP3 doesn't support writing yet", 14;
+  skip "AudioFile::Info::MP3::Info doesn't support writing yet", 14;
 
   copy "$Bin/test.mp3", "$Bin/test2.mp3";
 
