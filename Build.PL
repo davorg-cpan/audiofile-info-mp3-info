@@ -3,19 +3,21 @@ use AudioFile::Info::Build;
 
 my $module = 'AudioFile::Info::MP3::Info';
 
-my $b = AudioFile::Info::Build->new(module_name => $module,
-                                    license => 'perl',
-                                    requires => {
-                                                 perl            => '5.6.0',
-                                                 AudioFile::Info => 0,
-                                                 MP3::Info       => 0,
-                                                },
-                                    build_requires => {
-                                                 Module::Build   => 0
-                                                },
-                                    create_makefile_pl => 'passthrough',
-                                    dynamic_config => 1,
-                                   );
+my $b = AudioFile::Info::Build->new(
+    module_name => $module,
+    dist_version => '1.04',
+    license => 'perl',
+    requires => {
+        perl              => '5.6.0',
+        'AudioFile::Info' => 0,
+        i'MP3::Info'      => 0,
+    },
+    build_requires => {
+        'Module::Build'   => 0
+    },
+    create_makefile_pl => 'traditional',
+    dynamic_config => 1,
+);
 
 $b->create_build_script;
 
