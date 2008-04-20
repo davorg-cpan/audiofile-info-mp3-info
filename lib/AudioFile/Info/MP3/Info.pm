@@ -24,7 +24,7 @@ use Carp;
 
 use MP3::Info;
 
-our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d", '$Revision$ ' =~ /(\d+)/;
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',
