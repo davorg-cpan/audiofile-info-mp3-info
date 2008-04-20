@@ -10,7 +10,7 @@ my $b = AudioFile::Info::Build->new(
     requires => {
         perl              => '5.6.0',
         'AudioFile::Info' => 0,
-        i'MP3::Info'      => 0,
+        'MP3::Info'       => 0,
     },
     build_requires => {
         'Module::Build'   => 0
