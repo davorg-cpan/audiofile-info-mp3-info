@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 =head1 NAME
 
 AudioFile::Info::MP3::Info - Perl extension to get info from MP3 files.
@@ -23,6 +19,8 @@ use warnings;
 use Carp;
 
 use MP3::Info;
+
+our $VERSION = '1.4.1';
 
 my %data = (artist => 'ARTIST',
             title  => 'TITLE',
