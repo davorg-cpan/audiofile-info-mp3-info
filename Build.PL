@@ -5,7 +5,6 @@ my $module = 'AudioFile::Info::MP3::Info';
 
 my $b = AudioFile::Info::Build->new(
     module_name => $module,
-    dist_version => '1.04',
     license => 'perl',
     requires => {
         perl              => '5.6.0',
@@ -17,6 +16,16 @@ my $b = AudioFile::Info::Build->new(
     },
     create_makefile_pl => 'traditional',
     dynamic_config => 1,
+    meta_merge => {
+        'meta-spec' => { version => 2 },
+        resources  => {
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/davorg/audiofile-info-mp3-info.git',
+                web  => 'https://github.com/davorg/audiofile-info-mp3-info',
+            },
+        },
+    },
 );
 
 $b->create_build_script;
