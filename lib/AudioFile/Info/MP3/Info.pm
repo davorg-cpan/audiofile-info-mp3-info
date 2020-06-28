@@ -1,3 +1,5 @@
+use compat::perl7;
+
 =head1 NAME
 
 AudioFile::Info::MP3::Info - Perl extension to get info from MP3 files.
