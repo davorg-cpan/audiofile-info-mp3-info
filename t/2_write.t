@@ -1,9 +1,9 @@
 use strict;
 use warnings;
 
-use Test::More tests => 15;
+use Test::More;
 
-BEGIN { use_ok('AudioFile::Info') }
+use AudioFile::Info;
 
 use File::Copy;
 use FindBin qw($Bin);
@@ -44,3 +44,5 @@ SKIP: {
 
   unlink("$Bin/test2.mp3");
 }
+
+done_testing();
