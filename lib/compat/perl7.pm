@@ -10,13 +10,16 @@ Do the clever stuff.
 
 package compat::perl7;
 
+use strict;
+use warnings;
+
 # use compat::perl7 enables perl 5 code to function in a perl 7-ish way as much as possible compared to the version you are running.
 # it also is a hint to both tools and the compiler what the level of compatibility is with future versions of the language.
 
 BEGIN {
     # This code is a proof of concept provided against 5.30. In order for this code to work on other versions of perl
     # we would need to generate it via p7.pm.PL as part of shipping it to CPAN.
-    $] >= 5.030 && $] < 5.031 or die("Perl 5.30 is required to use this module.");
+    $] >= 5.030 and $] < 5.031 or die("Perl 5.30 is required to use this module.");
 }
 
 sub import {
