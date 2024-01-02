@@ -5,7 +5,7 @@ AudioFile::Info::MP3::Info - Perl extension to get info from MP3 files.
 =head1 DESCRIPTION
 
 This is a plugin for AudioFile::Info which uses MP3::Info to get
-data about MP files.
+data about MP3 files.
 
 See L<AudioFile::Info> for more details.
 

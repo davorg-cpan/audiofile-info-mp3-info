@@ -2,7 +2,7 @@ AudioFile::Info::MP3::Info
 ==========================
 
 AudioFile::Info::MP3::Info is a plugin module for AudioFile::Info.
-It extracts information from MP files using the module MP3::Info.
+It extracts information from MP3 files using the module MP3::Info.
 
 INSTALLATION
 
