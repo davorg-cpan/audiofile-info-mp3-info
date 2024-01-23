@@ -25,11 +25,11 @@ my $b = AudioFile::Info::Build->new(
         resources  => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/davorg/audiofile-info-mp3-info.git',
-                web  => 'https://github.com/davorg/audiofile-info-mp3-info',
+                url  => 'https://github.com/davorg-cpan/audiofile-info-mp3-info.git',
+                web  => 'https://github.com/davorg-cpan/audiofile-info-mp3-info',
             },
             bugtracker => {
-                web  => 'https://github.com/davorg/audiofile-info-mp3-info/issues',
+                web  => 'https://github.com/davorg-cpan/audiofile-info-mp3-info/issues',
             },
         },
     },
